@@ -16,4 +16,11 @@ public interface ItemService {
      Result<TbItem> listByPage(Page page,Query query,Order order);
 
 
+     Integer updataBatch(List<Long> ids);
+
+     Integer downBatch(List<Long> ids);
+
+     Integer upBatch(List<Long> ids);
+
+    int saveItem(TbItem tbItem, String content, String paramDate);
 }

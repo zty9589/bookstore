@@ -19,6 +19,7 @@
     </sql>
     <sql id="Where_Clause">
         <where>
+            i.status !=3
             <if test="query !=null and query.title !=null and query.title !=''">
                 i.title like '%${query.title}%'
             </if>
